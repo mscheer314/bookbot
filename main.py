@@ -1,8 +1,5 @@
 from stats import count_words
 from stats import count_chars
+from stats import report
 
-with open("./books/frankenstein.txt") as f:
-    file_contents = f.read()
-
-count_words(file_contents)
-count_chars(file_contents)
+report("./books/frankenstein.txt")
